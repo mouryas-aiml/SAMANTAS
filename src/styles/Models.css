@@ -1,0 +1,188 @@
+/* Models Page Styles */
+.models-page {
+  padding-top: 80px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Hero Section */
+.models-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+              url('https://images.unsplash.com/photo-1523380677598-64d85d015339?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-bottom: 4rem;
+}
+
+.models-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+}
+
+.models-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Models Grid */
+.models-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.model-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.model-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.model-image {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+}
+
+.model-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.model-card:hover .model-image img {
+  transform: scale(1.05);
+}
+
+.model-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.model-card:hover .model-overlay {
+  opacity: 1;
+}
+
+.instagram-link {
+  color: white;
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.instagram-link:hover {
+  color: #e74c3c;
+  transform: scale(1.2);
+}
+
+.model-info {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.model-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.model-info .category {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.instagram-handle {
+  color: #e74c3c;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.instagram-handle:hover {
+  color: #c0392b;
+}
+
+/* Join Team Section */
+.join-team {
+  background: #f9f9f9;
+  padding: 5rem 2rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.join-team h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+  color: #222;
+}
+
+.join-team p {
+  color: #666;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .models-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .models-container {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .join-team h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .models-hero {
+    height: 30vh;
+    min-height: 250px;
+  }
+  
+  .models-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .join-team {
+    padding: 3rem 1.5rem;
+  }
+  
+  .join-team h2 {
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,242 @@
+/* About Page Styles */
+.about {
+  padding-top: 80px;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(rgba(0, 12, 42, 0.8), rgba(0, 12, 42, 0.8)), 
+              url('https://images.unsplash.com/photo-1523050853548-5201af361e44?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 2rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.about-hero p {
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* About Content Section */
+.about-content {
+  padding: 3rem 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+  align-items: center;
+}
+
+.about-text h2 {
+  color: #000c2a;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.about-text h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background: #ffd700;
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.about-image {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.about-image:hover img {
+  transform: scale(1.03);
+}
+
+/* Mission & Vision */
+.mission-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin: 5rem 0;
+}
+
+.mission, .vision {
+  background: #f9f9f9;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission:hover, .vision:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.mission h3, .vision h3 {
+  color: #000c2a;
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+  position: relative;
+  padding-bottom: 0.8rem;
+}
+
+.mission h3::after, .vision h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: #ffd700;
+}
+
+.mission p, .vision p {
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Core Values */
+.core-values {
+  margin: 6rem 0;
+  text-align: center;
+}
+
+.core-values h2 {
+  color: #000c2a;
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+}
+
+.core-values h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #ffd700;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.value {
+  padding: 2rem 1.5rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.value i {
+  font-size: 2.5rem;
+  color: #ffd700;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.value h4 {
+  color: #000c2a;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.value p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .about-image {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .mission-vision {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .about-hero p {
+    font-size: 1.2rem;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .mission, .vision {
+    padding: 1.5rem;
+  }
+}
