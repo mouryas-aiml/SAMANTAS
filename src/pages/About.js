@@ -6,8 +6,8 @@ const About = () => {
     <div className="about">
       <section className="about-hero">
         <div className="container">
-          <h1>About COTHS</h1>
-          <p>Excellence in Education Since 1995</p>
+          <h1>About SAMANTAS</h1>
+          <p>Excellence in Education Since 2005</p>
         </div>
       </section>
       
@@ -17,14 +17,10 @@ const About = () => {
             <div className="about-text">
               <h2>Our Story</h2>
               <p>
-                Established in 1995, COTHS (City of Tomorrow High School) has been a beacon of quality education, 
-                nurturing young minds and preparing them for the challenges of tomorrow. Our commitment to academic 
-                excellence, character development, and holistic education has made us one of the most respected 
-                educational institutions in the region.
-              </p>
-              <p>
-                With state-of-the-art facilities, experienced faculty, and a student-centered approach, we provide 
-                an environment where students can explore their potential and achieve their dreams.
+                Samantas by Aparna is where tradition meets contemporary elegance. A celebration of India's rich textile heritage,
+                 we curate timeless pieces for the modern woman who honors her roots while embracing her individuality. From intricately 
+                 crafted kurtas and graceful sarees to statement ethnic sets and festive ensembles—each piece is a tribute to artisanal
+                  craftsmanship, woven with heritage techniques and finished with meticulous detail.
               </p>
             </div>
             <div className="about-image">
